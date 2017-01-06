@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "906986676381",
+    "firebase_url": "https://mhealth-1503b.firebaseio.com",
+    "project_id": "mhealth-1503b",
+    "storage_bucket": "mhealth-1503b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906986676381:android:047b9fa58d1e431c",
+        "android_client_info": {
+          "package_name": "muenruekham.vashiravit.firebaseauthen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906986676381-5u02s1lnju82j0hjcg3ajh4qeqebgk1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbQxa-YuFyNOLr_wej_gQ2Tt6N7-3Szes"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
