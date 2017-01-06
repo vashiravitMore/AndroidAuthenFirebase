@@ -78,6 +78,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == signInButton) {
+            String email = usernameEditText.getText().toString();
+            String password = passwordEditText.getText().toString();
+            Toast.makeText(MainActivity.this,
+                    "email : " + email + ", password : " + password,
+                    Toast.LENGTH_SHORT)
+                    .show();
+
+            mAuth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete( Task<AuthResult> task) {
+                            if (!task.isSuccessful()) {
+                                Log.d("TAG", "signInWithEmail" + task.getException().getMessage());
+                                Toast.makeText(MainActivity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(MainActivity.this, "Authen success", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
 
         } else if (view == signUpButton) {
             String email = usernameEditText.getText().toString();
